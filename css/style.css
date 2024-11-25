@@ -1,9 +1,6 @@
-body{
-    background-color:#f6ede2;
-    font-family: Roboto, serif;         
-}
+/* Flexbox + Grid */
 
-header, main{
+/* header, main{
 text-align: center;
 }
 
@@ -89,6 +86,51 @@ footer{
 footer p{
     font-size: 14px;
     font-weight:100;
+} */
+
+/* Flexbox + Grid */
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* estilos generales*/
+
+body{
+    background-color: #f6ede2;
+}
+
+/* estilos mobile */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 15%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: center
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #563008;
+}
+
+
+
+
 
 
