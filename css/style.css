@@ -1,62 +1,4 @@
-/* Flexbox + Grid */
-
-/* header, main{
-text-align: center;
-}
-
-header div p{
-    background-color: #563008;
-    color: #f6ede2;
-    font-size: smaller;
-    font-size: 14px;
-}
-
-header nav{
-    background-color: #f6ede2;
-}
-
-header nav ul{
-    list-style: none;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: #563008;
-}
-
-main h1{
-    color: #563008;
-}
-
-.estado-activo{
-    font-weight: bolder;
-}
-
-.intro{
-    color:#563008;
-    background-color: #F0AB0F;
-}
-
-
-.recientes{
-    background-color:whitesmoke ;    
-}
-
-.recientes a{
-    text-decoration: none;
-    font-weight: bold;
-    color: palevioletred;
-}
-
-.favs{    
-    background-color: white;
-}
-
-.favs a{ 
-    text-decoration: none;
-    font-weight: bold;
-    color: #F0AB0F;
-}
+/* 
 
 .informacion-extra{
     background-color: #f5e3cb;
@@ -97,31 +39,47 @@ footer p{
     box-sizing: border-box;
 }
 
+
 /* estilos generales*/
 
-body{
+body {
     background-color: #f6ede2;
+    font-family: Roboto;
+    min-height: 100vh; /* Para que ocupe la pantalla */
+    display: flex;
+    flex-direction: column; 
+}
+
+.estado-activo{
+    font-weight: bolder;
 }
 
 /* estilos mobile */
 
-header {
+header .descripcion{
+    background-color: #563008;
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 0.5rem;
+}
+
+header .menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem;
 }
 
 header img{
-    width: 15%;
+    width: 10%;
 }
 
 header nav ul{
     list-style: none;
     display: flex;
     gap: 1rem;
-    text-decoration: none;
     align-items: center
-
 }
 
 header nav ul li a{
@@ -129,7 +87,119 @@ header nav ul li a{
     color: #563008;
 }
 
+/* Estilos del main */
+main {
+    flex: 1; /* Para que el main ocupe todo el espacio restante */
+    row-gap: 2rem;
+}
 
+main .intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0AB0F;
+    color:#563008;
+    padding: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem; /* Espacio entre secciones */
+}
+
+main section p{
+    text-align: center;
+}
+
+main h1{
+    color: #563008;
+    text-align: center;
+}
+
+main h2{
+    color: #563008;
+    text-align: center;
+}
+
+main section img{
+    width: 60%;
+    height: 60%;
+}
+
+main .recientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color:whitesmoke;
+    color:#563008;
+    padding: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem; /* Espacio entre secciones */
+}
+
+.recientes a{
+    text-decoration: none;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+main .favs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color:white;
+    color:#563008;
+    padding: 1.5rem;
+    gap: 1rem;
+
+}
+
+.favs a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F0AB0F;
+}
+
+.informacion-extra{
+    display: none;
+}
+
+/* Estilos de footer */
+footer{
+    text-align: center;
+    background-color: #563008;
+    color: white;
+    position: relative;
+    padding: 0.5rem;
+    font-size: small;
+}
+
+main .tienda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color:white;
+    color:#563008;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.tienda a{
+    text-decoration: none;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 30vh;
+    background-color: #f0f0f0;
+}
+video {
+    max-width: 100%; /* Evita que el video exceda el contenedor */
+    height: auto; /* Mantiene las proporciones */
+}
 
 
 
