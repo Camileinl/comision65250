@@ -1,0 +1,92 @@
+body{
+    background-color:#f6ede2;
+    font-family: Roboto, serif;         
+}
+
+header, main{
+text-align: center;
+}
+
+header div p{
+    background-color: #563008;
+    color: #f6ede2;
+    font-size: smaller;
+    font-size: 14px;
+}
+
+header nav{
+    background-color: #f6ede2;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #563008;
+}
+
+main h1{
+    color: #563008;
+}
+
+.estado-activo{
+    font-weight: bolder;
+}
+
+.intro{
+    color:#563008;
+    background-color: #F0AB0F;
+}
+
+
+.recientes{
+    background-color:whitesmoke ;    
+}
+
+.recientes a{
+    text-decoration: none;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+.favs{    
+    background-color: white;
+}
+
+.favs a{ 
+    text-decoration: none;
+    font-weight: bold;
+    color: #F0AB0F;
+}
+
+.informacion-extra{
+    background-color: #f5e3cb;
+}
+
+.tienda{
+    background-color: white;
+}
+
+.tienda a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F0AB0F;
+}
+
+#acerca-de{  
+    background-color: white;  
+    color: #563008;
+}
+
+footer{
+    background-color: #563008;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight:100;
+}
