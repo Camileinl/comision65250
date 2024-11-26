@@ -233,9 +233,8 @@ main .form .titulo {
 main .form div .pink-color{
     background-color: palevioletred;
     margin-bottom: 3rem;
+    border-color:rgb(179, 35, 59);
 }
-
-
 
 
 
@@ -243,7 +242,7 @@ main .form div .pink-color{
 
 /* Ajuste para el footer */
 
-footer {
+.footer {
     text-align: center;
     background-color: #563008;
     color: white;
@@ -312,6 +311,7 @@ footer {
         grid-column: span 2;
         background-color: #A0887C;
         padding-top: 1rem;
+        justify-content: center;
 
     }
 
@@ -323,6 +323,7 @@ footer {
         width: 100%;
         height: auto;
         padding: 4rem;
+        
     }
 
     /* Estilos para el bootstrap */
@@ -393,7 +394,7 @@ footer {
     
     /* Ajuste para el footer */
     
-    footer {
+    .footer {
         text-align: center;
         background-color: #563008;
         color: white;
@@ -458,48 +459,39 @@ footer {
         width: 10%;
     }
     
-    main #acerca-de{
-        padding: 1rem;
-        background-color:#b68104;
-        color: white;
-        font-size: medium;
-        height: fit-content;
-        grid-column: span 2;
-    }
 
-    main .form{
-        grid-column: span 2;
-    }
-    
-    main .form .titulo {
-        margin-top: 3rem;
-    }
-    
-    main .form div .pink-color{
-        background-color: palevioletred;
-        margin-bottom: 3rem;
-    }
+
     
     .video-container{
-        grid-column: span 2;
+        grid-column: span 1;
         height: 50vh;
     }
 
     video{
-        height: 38vh;
+        height: 35vh;
         width: auto;
+    }
+
+    main #acerca-de{
+        margin-top: 7rem;
+        grid-column: span 1;
+    }
+
+    .form{
+        margin: 4rem;
     }
 
     
     /* Ajuste para el footer */
     
-    footer {
+    .footer {
         text-align: center;
         background-color: #563008;
         color: white;
         position: relative;
-        font-size: large;
+        font-size: small;
         height: 5vh;
+        margin-bottom: 1.5rem;
     }
 
 
