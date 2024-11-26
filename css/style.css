@@ -11,9 +11,10 @@
 body {
     background-color: #f6ede2;
     font-family: Roboto;
-    min-height: 100vh; /* Para que ocupe la pantalla */
+    min-height: 100vh; /* Para que ocupe toda la pantalla */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    
 }
 
 .estado-activo{
@@ -59,16 +60,18 @@ header nav ul li a{
 main {
     flex: 1; /* Para que el main ocupe todo el espacio restante */
     row-gap: 2rem;
+     
 }
 
 main .intro {
     display: flex;
     flex-direction: column;
-    background-color: #F0AB0F;
+    background-color: #EED0C8;
     color:#563008;
     padding: 1.5rem;
     gap: 1rem;
     margin-bottom: 2rem; /* Espacio entre secciones */
+    
 }
 
 main section p{
@@ -78,6 +81,7 @@ main section p{
 main h1{
     color: #563008;
     text-align: center;
+    padding: 1rem;
 }
 
 main h2{
@@ -99,6 +103,7 @@ main .recientes{
     color:#563008;
     padding: 1.5rem;
     margin-bottom: 2rem; /* Espacio entre secciones */
+    margin: 1rem;
 }
 
 .recientes a{
@@ -116,7 +121,7 @@ main .favs{
     color:#563008;
     padding: 1.5rem;
     margin-bottom: 2rem; /* Espacio entre secciones */
-
+    margin: 1rem;
 }
 
 .favs a{
@@ -138,6 +143,7 @@ main .tienda{
     color:#563008;
     padding: 1.5rem;
     margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .tienda a{
@@ -151,12 +157,19 @@ main .tienda{
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     height: 30vh;
-    background-color: #f0f0f0;
+    background-color:#F0AB0F;
+    margin: 1rem;
 }
 video {
     max-width: 100%; 
     height: auto; 
 }
+
+main .acerca-de{
+    display: flex;
+    padding: 1rem;
+}
+
 
 
 /* Estilos de footer */
@@ -168,6 +181,80 @@ footer{
     padding: 0.5rem;
     font-size: small;
 }
+
+
+/* Estilos para el bootstrap */
+
+/* Ajustes del header */
+
+header .descripcion-acerca-de {
+    background-color: #563008;
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 0.5rem;
+    position: relative;
+    height: 3.4vh;
+}
+
+header .descripcion-acerca-de {
+    margin-bottom: 0;
+}
+
+header .menu-acerca-de {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header .menu-acerca-de .menu-navegacion ul{
+    margin-bottom: 0;
+}
+
+header .menu-acerca-de img {
+    width: 10%;
+}
+
+main #acerca-de{
+
+    padding: 1rem;
+    background-color:#b68104;
+    color: white;
+    font-size: medium;
+}
+
+main .form .titulo {
+    margin-top: 3rem;
+}
+
+main .form div .pink-color{
+    background-color: palevioletred;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+/* Ajuste para el footer */
+
+footer {
+    text-align: center;
+    background-color: #563008;
+    color: white;
+    position: relative;
+    font-size: small;
+    height: 3.4vh;
+}
+
+
+
+
 
 /* Estilos tablet */
 
@@ -238,13 +325,85 @@ footer{
         padding: 4rem;
     }
 
-    footer{
+    /* Estilos para el bootstrap */
+
+    header .descripcion-acerca-de {
+        background-color: #563008;
+        color: white;
+        text-align: center;
         font-size: large;
+        padding: 0.5rem;
+        position: relative;
+        height: 5vh;
+    }
+    
+    header .descripcion-acerca-de {
+        margin-bottom: 0;
+    }
+    
+    header .menu-acerca-de {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    header .menu-acerca-de .menu-navegacion ul{
+        margin-bottom: 0;
+    }
+    
+    header .menu-acerca-de img {
+        width: 15%;
+    }
+    
+    main #acerca-de{
+        padding: 1rem;
+        background-color:#b68104;
+        color: white;
+        font-size: medium;
+        height: fit-content;
+        grid-column: span 2;
+    }
+
+    main .form{
+        grid-column: span 2;
+    }
+    
+    main .form .titulo {
+        margin-top: 3rem;
+    }
+    
+    main .form div .pink-color{
+        background-color: palevioletred;
+        margin-bottom: 3rem;
+    }
+    
+    .video-container{
+        grid-column: span 2;
+        height: 50vh;
+    }
+
+    video{
+        height: 38vh;
+        width: auto;
+    }
+
+    
+    /* Ajuste para el footer */
+    
+    footer {
+        text-align: center;
+        background-color: #563008;
+        color: white;
+        position: relative;
+        font-size: large;
+        height: 5vh;
     }
 
 }
 
-   
 
 /* Estilos desktop */
 @media screen and (min-width:1024px){
@@ -269,28 +428,81 @@ footer{
         padding-left: 4rem;
     }
 
+    /* Estilos para el bootstrap */
+
+    header .descripcion-acerca-de {
+        background-color: #563008;
+        color: white;
+        text-align: center;
+        font-size: small;
+        padding: 0.5rem;
+        position: relative;
+        height: 5vh;
+    }
+    
+    header .menu-acerca-de {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    header .menu-acerca-de .menu-navegacion ul{
+        display: flex;
+        gap: 80px;
+    }
+    
+    header .menu-acerca-de img {
+        width: 10%;
+    }
+    
+    main #acerca-de{
+        padding: 1rem;
+        background-color:#b68104;
+        color: white;
+        font-size: medium;
+        height: fit-content;
+        grid-column: span 2;
+    }
+
+    main .form{
+        grid-column: span 2;
+    }
+    
+    main .form .titulo {
+        margin-top: 3rem;
+    }
+    
+    main .form div .pink-color{
+        background-color: palevioletred;
+        margin-bottom: 3rem;
+    }
+    
+    .video-container{
+        grid-column: span 2;
+        height: 50vh;
+    }
+
+    video{
+        height: 38vh;
+        width: auto;
+    }
+
+    
+    /* Ajuste para el footer */
+    
+    footer {
+        text-align: center;
+        background-color: #563008;
+        color: white;
+        position: relative;
+        font-size: large;
+        height: 5vh;
+    }
+
+
+
 
 }
-
-    /*main .img-dos, main .img-cinco{
-        display:block;
-    }
-
-    main{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 30% 30% 20%;
-    }
-
-    main .img-uno, main .img-tres{
-        grid-row:span 2;
-    }
-
-    main .img-dos, main .img-cuatro{
-        grid-column: span 1;
-    }
-
-    main .img-cinco{
-        grid-column: span 3;
-    }
-
- */
