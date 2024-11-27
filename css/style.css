@@ -134,6 +134,12 @@ main .favs{
     display: none;
 }
 
+.informacion-extra-platos{
+    display: none;
+}
+
+
+
 main .tienda{
     display: flex;
     flex-direction: column;
@@ -194,7 +200,7 @@ header .descripcion-acerca-de {
     font-size: small;
     padding: 0.5rem;
     position: relative;
-    height: 3.4vh;
+    height: 4vh;
 }
 
 header .descripcion-acerca-de {
@@ -204,7 +210,7 @@ header .descripcion-acerca-de {
 header .menu-acerca-de {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -249,6 +255,7 @@ main .form div .pink-color{
     position: relative;
     font-size: small;
     height: 3.4vh;
+    margin-bottom: 0;
 }
 
 
@@ -325,6 +332,23 @@ main .form div .pink-color{
         padding: 4rem;
         
     }
+
+    .informacion-extra-platos{
+        display: grid;
+        grid-template-rows: 1fr 0.8fr 0.3fr;
+        grid-column: span 2;
+    }
+
+    main .informacion-extra-platos div{
+        margin: 0.5rem;
+        background-color: #A0887C;
+        padding: 1rem;
+    }
+
+    main .informacion-extra-platos div p{
+        text-align:start;
+    }
+
 
     /* Estilos para el bootstrap */
 
@@ -458,8 +482,6 @@ main .form div .pink-color{
     header .menu-acerca-de img {
         width: 10%;
     }
-    
-
 
     
     .video-container{
@@ -481,6 +503,15 @@ main .form div .pink-color{
         margin: 4rem;
     }
 
+    .informacion-extra-platos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 0.5fr;
+    }
+
+    .informacion-extra-platos .extra{
+        grid-column: span 2;
+
+    }
     
     /* Ajuste para el footer */
     
@@ -491,7 +522,6 @@ main .form div .pink-color{
         position: relative;
         font-size: small;
         height: 5vh;
-        margin-bottom: 1.5rem;
     }
 
 
